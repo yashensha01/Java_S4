@@ -28,5 +28,6 @@ public class arraysort
         {
             System.out.print(arr[i]+" ");
         }
+    s.close();
     }
 }
