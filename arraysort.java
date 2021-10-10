@@ -12,6 +12,21 @@ public class arraysort
         for (i=0; i<arrayLength;i++ )
             arr [i] = s.nextInt();
         for (i=0; i<arrayLength;i++ )
-            System.out.print(arr[i]);
+        {
+            for(j=0;j<arrayLength;j++)
+            {
+                if(arr[i]<arr[j])
+                {
+                temp=arr[j];
+                arr[j]=arr[i];
+                arr[i]=temp;
+                }
+            }
+        }
+        System.out.println("Sorted elements are :");
+        for(i=0;i<arrayLength;i++)
+        {
+            System.out.print(arr[i]+" ");
+        }
     }
 }
